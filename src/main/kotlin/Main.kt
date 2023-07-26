@@ -1,20 +1,15 @@
 fun main(args: Array<String>) {
 
-    var i: Int = 10
-    var j: Int? = 10
+    // 타입 추론 : kotlin은 타입추론으로 변수에 들어오는 값을 보고 타입을 알아서 지정해줌
+    val s = "ABC"
+    val i = 1
+    val l = 1L
+    val d = 1.0
+    val f = 1.0f
 
-    var k: String = "ABC"
-    var l: String? = "ABC"
-
-//    i = null    // 에러 발생(null 불허)
-    j = null
-
-//    k = null    // 에러 발생(null 불허)
-    l = null
-
-    println(i)  // 10
-    println(j)  // null
-
-    println(k)  // ABC
-    println(l)  // null
+    println("s = " + s::class)  // s = class java.lang.String (Kotlin reflection is not available)
+    println("i = " + i::class)  // i = int (Kotlin reflection is not available)
+    println("l = " + l::class)  // l = long (Kotlin reflection is not available)
+    println("d = " + d::class)  // d = double (Kotlin reflection is not available)
+    println("f = " + f::class)  // f = float (Kotlin reflection is not available)
 }
