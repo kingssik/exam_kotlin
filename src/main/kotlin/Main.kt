@@ -1,11 +1,20 @@
 fun main(args: Array<String>) {
 
     var i: Int = 10
-    val j: Int = 10
+    var j: Int? = 10
 
-    i = 20  // 10으로 저장한 값 20으로 변경 가능
-//    j = 20  // 변경 불가능
+    var k: String = "ABC"
+    var l: String? = "ABC"
 
-    println(i)
-    println(j)
+//    i = null    // 에러 발생(null 불허)
+    j = null
+
+//    k = null    // 에러 발생(null 불허)
+    l = null
+
+    println(i)  // 10
+    println(j)  // null
+
+    println(k)  // ABC
+    println(l)  // null
 }
