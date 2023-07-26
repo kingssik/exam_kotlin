@@ -1,10 +1,10 @@
 fun main(args: Array<String>) {
 
-    val price: Int? = null
+    val price: Int = 100
 
-    if (price == null) {
-        println("null check true")  // price가 null 일 경우 실행
+    if (price in arrayOf(100, 200, 300)) {
+        println("contain")
     } else {
-        println("price = $price")   // price가 null이 아닐 경우 실행
+        println("not contained")
     }
 }
