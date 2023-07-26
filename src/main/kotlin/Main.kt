@@ -1,11 +1,10 @@
 fun main(args: Array<String>) {
 
-    val priceA = 100
-    val priceB = 200
+    val price: Int? = null
 
-    if (priceA >= priceB) {
-        println("priceA = $priceA") // 조건식 true일 경우 실행
+    if (price == null) {
+        println("null check true")  // price가 null 일 경우 실행
     } else {
-        println("priceB = $priceB") // 조건식 false일 경우 실행
+        println("price = $price")   // price가 null이 아닐 경우 실행
     }
 }
